@@ -27,7 +27,7 @@
       scene.background = new THREE.Color(0xea9239e)
       scene.add(new THREE.HemisphereLight(0xffffcc, 0x333399, 0.25))
       camera.position.set(0, 135, 0)
-      new GLTFLoader().load("scene.glb", ({ scene: model }, animations) => {
+      new GLTFLoader().load("/public/scene.glb", ({ scene: model }, animations) => {
         scene.add(model)
         model.scale.setScalar(1.75)
         camera.lookAt(model.position)
